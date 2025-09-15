@@ -9,14 +9,24 @@
   <body>
     <header>
       <div class="header-container">
-        <span class="logo">AEK</span>
-        <nav>
-          <ul>
-            <li><a href="#homepage">Anasayfa</a></li>
-            <li><a href="#projects">Projeler</a></li>
-            <li><a href="#contact">İletişim</a></li>
-          </ul>
-        </nav>
+        <div class="logo">AEK</div>
+        <div class="menu-wrapper">
+          <button class="hamburger-menu" aria-label="Menü">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#experience">İş Deneyimleri</a></li>
+              <li><a href="#projects">Projeler</a></li>
+              <li><a href="#education">Eğitim</a></li>
+              <li><a href="#certification">Sertifikalar</a></li>
+              <li><a href="#skill">Beceriler</a></li>
+              <li><a href="#contact">İletişim</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -45,7 +55,7 @@
         </div>
       </section>
     </main>
-    <section class="alt">
+    <section class="alt" id="experience">
       <div class="expr">
         <h2>İş Deneyimi</h2>
         <p>- Kalkancı Pres Döküm A.Ş. Bilgi İşlem Stajyeri</p>
@@ -74,7 +84,7 @@
         </p>
       </div>
     </section>
-    <section class="alt">
+    <section class="alt" id="education">
       <div class="edu">
         <h2>Eğitim</h2>
         <p>
@@ -87,14 +97,14 @@
         </p>
       </div>
     </section>
-    <section class="alt">
+    <section class="alt" id="certification">
       <div class="srt">
         <h2>Sertifikalar</h2>
         <p>ISO 9001:2015 Kalite Yönetim Sistemi Temel Eğitimi</p>
         <p>- Katılım Tarihi: 08.04.2025</p>
       </div>
     </section>
-    <section class="alt">
+    <section class="alt" id="skill">
       <div class="skills">
         <h2>Beceriler</h2>
         <ul>
@@ -128,5 +138,10 @@
         <p>© 2025 Ali Emin Kamyon. Tüm hakları saklıdır.</p>
       </div>
     </footer>
+    <div class="menu-overlay"></div>
+    <button id="scrollToTopBtn" title="Yukarı Çık">
+      <span class="arrow">^</span>
+    </button>
+    <script src="script.js"></script>
   </body>
 </html>
