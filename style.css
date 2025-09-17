@@ -22,6 +22,9 @@ header {
   background-color: black;
   border-bottom: 1px solid;
   padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header-container {
@@ -33,15 +36,15 @@ header {
   align-items: center;
   padding: 0 20px;
 }
-
-.logo {
+.logo a {
   font-size: 24px;
   font-weight: 700;
   color: #ddd;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.logo:hover {
+.logo a:hover {
   color: goldenrod;
 }
 .hamburger-menu {
@@ -240,7 +243,12 @@ section.alt li {
 section.alt ul {
   list-style-type: disc;
 }
-
+section[id] {
+  scroll-margin-top: 80px;
+}
+#homepage {
+  scroll-margin-top: 50px;
+}
 .skills ul li::marker {
   color: goldenrod;
   font-size: 20px;
