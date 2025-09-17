@@ -16,12 +16,14 @@ hamburger.addEventListener("click", () => {
     sections.forEach((section) => {
       section.classList.add("blur");
     });
+    document.body.style.overflow = "hidden";
   } else {
     menuOverlay.style.display = "none";
     mainContent.classList.remove("blur");
     sections.forEach((section) => {
       section.classList.remove("blur");
     });
+    document.body.style.overflow = "auto";
   }
 });
 
@@ -35,6 +37,7 @@ menuLinks.forEach((link) => {
       section.classList.remove("blur");
     });
     menuOverlay.style.display = "none";
+    document.body.style.overflow = "auto";
   });
 });
 
@@ -47,6 +50,7 @@ menuOverlay.addEventListener("click", () => {
     section.classList.remove("blur");
   });
   menuOverlay.style.display = "none";
+  document.body.style.overflow = "auto";
 });
 window.onscroll = function () {
   scrollFunction();
